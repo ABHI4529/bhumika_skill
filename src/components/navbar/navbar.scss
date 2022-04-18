@@ -1,0 +1,59 @@
+nav{
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    background-color: white;
+    height: 50px;
+    flex-direction: row;
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+
+        .hed_1{
+            font-family: "Josefin Sans", "serif";
+            align-self: center;
+        }
+
+        .hed_2{
+            font-family: "Josefin Sans", "serif";
+            align-self: center;
+            color: #33658A;
+        }
+    }
+
+    .search{
+        margin-left: 100px;
+        display: flex;
+        width: 100%;
+        align-self: center;
+        input{
+            font-family: "Josefin Sans", "serif";
+            align-self: center;
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+        }
+    }
+
+    a{
+        font-family: "Josefin Sans", "serif";
+        color: black;
+        padding: 10px 30px;
+        align-self: center;
+    }
+
+    button{
+        padding: 10px;
+        width: 150px;
+        font-family: "Josefin Sans", "serif";
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: #33658A;
+        border-style: none;
+    }
+}
