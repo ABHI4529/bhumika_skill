@@ -1,22 +1,23 @@
 import { Component } from "react";
 import "./homepage.css"
+import NavBar from "../../components/navbar/navbar";
 import logoComp from "../../assets/home_comp.png";
 
 class HomePage extends Component{
     render() {
         return (
              <div className="homepage">
+                 <NavBar></NavBar>
                  <div className="options">
                      <a>Languages</a>
                      <a>Courses</a>
                      <a>Job Position</a>
-                     
                  </div>
                  <main>
                     <div className="logo-header">
                         <img src={logoComp} alt="logo-component"></img>
-                        <h1>Fun Way Of<br></br>
-                            Learning New<br></br>
+                        <h1>Fun Way Of
+                            Learning New
                             Skills
                         </h1>
                         <button>Get Started</button>

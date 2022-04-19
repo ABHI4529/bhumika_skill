@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 
@@ -13,9 +14,13 @@ class NavBar extends Component{
                 <div className="search">
                     <input placeholder="Search Courses"></input>
                 </div> 
-                <a>Home</a>
-                <a>About</a>
-                <button>Login</button>
+                <div className="menu">
+                    <a>Home</a>
+                    <a>About</a>
+                </div>
+                <Link to="/login">
+                    <button className="login-button">Login</button>
+                </Link>
             </nav>
         );
     }

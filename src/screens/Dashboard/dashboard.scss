@@ -1,0 +1,38 @@
+.dashboard{
+    height:auto;
+    display: flex;
+
+    .appbar{
+        padding: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content:space-between;
+        box-shadow: grey 10px 10px 40px;
+        .logo{
+            display: flex;
+            flex-direction: row;
+    
+            .hed_1{
+                font-family: "Josefin Sans", "serif";
+                align-self: center;
+            }
+    
+            .hed_2{
+                font-family: "Josefin Sans", "serif";
+                align-self: center;
+                color: #33658A;
+            }
+        }
+        P{
+            font-family: "Josefin Sans", "serif";
+            align-self: center;
+            margin-left: 20%;
+        }
+
+        .userImage{
+            border-radius: 30px;
+        }
+    }
+}
