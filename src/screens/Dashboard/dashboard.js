@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import { auth, db } from "../../Firebase/firebaseConfig";
 import { signOut } from "firebase/auth";
 import {collection, getDocs} from 'firebase/firestore';
-import { useEffect, useState, setState } from "react";
+import { useEffect, useState} from "react";
 
 
 const Dashboard = ({UserData, SetIsAuth}) =>{
@@ -28,10 +28,7 @@ const Dashboard = ({UserData, SetIsAuth}) =>{
         navigate("/");
     }
     const setSelected = ({selectedItem})=>{
-        setState((prevState) => {
-            selected = selectedItem;
-            console.log(selectedItem);          
-        })
+
     }
     return(
         <div className="dashboard">
