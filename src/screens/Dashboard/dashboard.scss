@@ -1,5 +1,7 @@
 .dashboard{
-    height:auto;
+    height:100%;
+    width:100%;
+    flex-direction: column;
     display: flex;
 
     .appbar{
@@ -33,6 +35,81 @@
 
         .userImage{
             border-radius: 30px;
+        }
+    }
+
+    .data{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+
+        .languages{
+            padding: 30px;
+            width: 100%;
+
+            h1{
+                font-family: "Josefin Sans", "serif";
+            }
+
+            .comboBox{
+                margin-top: 50px;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+
+        .domains{
+            padding: 30px;
+            width: 100%;
+            h1{
+                font-family: "Josefin Sans", "serif";
+            }
+            .comboBox{
+                margin-top: 50px;
+                padding: 10px;
+                width: 100%;
+
+                .values{
+                    padding: 10px;
+                    font-family: "Josefin Sans", "serif";
+                }
+            }
+
+        }
+
+        .jobs{
+            padding: 30px;
+            width: 100%;
+            h1{
+                font-family: "Josefin Sans", "serif";
+            }
+            .comboBox{
+                margin-top: 50px;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    .road-button{
+        background-color: #356486;
+        border-style: none;
+        color: white;
+        font-family: "Josefin Sans", "serif";
+        margin-top: 150px;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        align-self: center;
+        text-align: center;
+        text-decoration: none;
+        transition-duration: 500ms;
+
+        &:hover{
+            transition-duration: 500ms;
+            width: 50%;
         }
     }
 }
