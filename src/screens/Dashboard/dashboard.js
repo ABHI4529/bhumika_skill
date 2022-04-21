@@ -8,7 +8,7 @@ import { useEffect, useState} from "react";
 
 const Dashboard = ({UserData, SetIsAuth}) =>{
     const navigate = useNavigate();
-    let selected = "";
+    let selected = "https://whimsical.com/python-roadmap-GKwiobSC9qXDp6L19xw6DU";
     const [languageList, setLanguageList] = useState([]);
     const collectionRef = collection(db, "Languages");
 
