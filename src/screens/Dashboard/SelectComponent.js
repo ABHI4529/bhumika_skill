@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Select from "react-select";
+import "./dashboard.css"
 
 const SelectComponent = (props) => {
     var options = [{
@@ -17,7 +18,7 @@ const SelectComponent = (props) => {
     })
 
   return (
-    <Select  onChange={(e)=>{props.updateLink(e.value)}} options={options} />
+    <Select className="comboBox" onChange={(e)=>{props.updateLink(e.value)}} options={options} />
   )
 }
 

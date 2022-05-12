@@ -4,6 +4,7 @@ import { auth, db } from "../../Firebase/firebaseConfig";
 import { signOut } from "firebase/auth";
 import {collection, getDocs} from 'firebase/firestore';
 import { useEffect, useState} from "react";
+import Select from "react-select";
 import SelectComponent from "./SelectComponent";
 
 
