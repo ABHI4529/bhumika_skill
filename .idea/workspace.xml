@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b64ff135-63ac-4eaa-ab10-09c96319eb8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Firebase/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Firebase/firebaseConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/dashboard.scss" afterDir="false" />
     </list>
@@ -12,8 +14,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/screens/Dashboard/dashboard.js" root0="FORCE_HIGHLIGHTING" />
@@ -27,6 +44,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -34,6 +52,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -55,6 +74,11 @@
       <updated>1650520095379</updated>
       <workItem from="1650520100457" duration="75000" />
       <workItem from="1650520312330" duration="734000" />
+      <workItem from="1650609691729" duration="74000" />
+      <workItem from="1652194372846" duration="257000" />
+      <workItem from="1652213717203" duration="7342000" />
+      <workItem from="1652253558258" duration="264000" />
+      <workItem from="1652254558942" duration="2468000" />
     </task>
     <servers />
   </component>

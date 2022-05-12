@@ -4,21 +4,44 @@ import { auth, db } from "../../Firebase/firebaseConfig";
 import { signOut } from "firebase/auth";
 import {collection, getDocs} from 'firebase/firestore';
 import { useEffect, useState} from "react";
+import SelectComponent from "./SelectComponent";
 
 
 const Dashboard = ({UserData, SetIsAuth}) =>{
     const navigate = useNavigate();
-    let selected = "https://whimsical.com/python-roadmap-GKwiobSC9qXDp6L19xw6DU";
+    const [link, UpdateLink] = useState("");
     const [languageList, setLanguageList] = useState([]);
+    const [domainList, setDomainList] = useState([]);
+    var selectedVal = "";
+    const [jobpositionList, setJobList] = useState([]);
     const collectionRef = collection(db, "Languages");
+    const domainRef = collection(db, "Domain");
+    const positionRef = collection(db, "Job Positions");
 
     useEffect(()=>{
         getLanguages();
+        getDomains();
+        getPositions();
     },[]);
+
+    const setLinkToRoadmap = (e) =>{
+        // selectedVal = e.target.value;
+        console.log(selectedVal);
+    }
 
     const getLanguages = async() =>{
         const data = await getDocs(collectionRef);
         setLanguageList(data.docs.map((docs)=>({...docs.data(), id: docs.id })))
+    }
+
+    const getPositions = async() => {
+        const data = await getDocs(positionRef);
+        setJobList(data.docs.map((docs) => ({...docs.data(), id: docs.id})))
+    }
+
+    const getDomains = async() => {
+        const data = await getDocs(domainRef);
+        setDomainList(data.docs.map((docs)=>({...docs.data(), id: docs.id})))
     }
 
     const logout= async () =>{
@@ -26,9 +49,6 @@ const Dashboard = ({UserData, SetIsAuth}) =>{
         window.localStorage.setItem("isAuth", false);
         SetIsAuth(false)
         navigate("/");
-    }
-    const setSelected = ({selectedItem})=>{
-
     }
     return(
         <div className="dashboard">
@@ -43,28 +63,28 @@ const Dashboard = ({UserData, SetIsAuth}) =>{
             <div className="data">
                 <div className="languages">
                     <h1>Languages</h1>
-                    <select className="comboBox" placeholder="Choose" name="Languages">
-                        {languageList.map((lang)=>{
-                            return <option value={lang.language} onClick={setSelected}>{lang.language}</option>
-                        })}
-                    </select>
+                    <SelectComponent updateLink={UpdateLink} optionData={languageList}/>
                 </div>
                 <div className="domains">
                 <h1>Domains</h1>
-                    <select className="comboBox" placeholder="Choose" name="Languages">
-                        <option value="java">Web Development</option>
-                        <option value="Python">Android Development</option>
+                    <select  className="comboBox" placeholder="Choose" name="Languages">
+                        {domainList.map((dom) => {
+                            return <option value={dom.Domain} >{dom.Domain}</option>
+                        })}
                     </select>
                 </div>
                 <div className="jobs">
                 <h1>Job Position</h1>
                     <select className="comboBox" placeholder="Choose" name="Languages">
-                        <option value="java">Data Analytic Engineer</option>
-                        <option value="Python">Data Scentist Engineer</option>
+                        {
+                            jobpositionList.map((job) => {
+                                return <option value={job.job_position}>{job.job_position}</option>
+                            })
+                        }
                     </select>
                 </div>
             </div>
-            <a className="road-button" href={selected}>Get Road Map</a>
+            <a className="road-button" target={"_blank"} href={link}>Get Road Map</a>
         </div>
     )
 }
